@@ -1,3 +1,10 @@
+header #navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  z-index: 1;
+  width: 100%; /* Full width */
+  transition: top 0.3s;
+}
 header .navbar .nav-link,
 header .navbar .nav-link.active {
     color: #fff;
@@ -357,30 +364,35 @@ div.gallary a:hover {
     color: black;
     text-decoration: underline;
 
+
 }
 
-.col-3 .post {
-    width: 35%;
-}
 
-.col-3 .post img {
-    width: 100%;
-    padding: 0.3rem;
-}
 
-#section_5 .container {
+#section_5 .col {
+    width: 25%;
+    padding: 20px;
+    overflow: hidden;
+    /* أي اش بطلع ع الحدود اخفيه*/
+} 
+
+#section_5 .gall{
     position: relative;
-
 }
 
 #section_5 .image {
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    /* ما بتطلع عن اطارها*/
 }
 
+#section_5 .image img {
+    width: 100%;
+    transition: all 0.5s ease;
+    /* transtion |proparita|  |time|  |how| تغيير تدريجي*/
+
+}
 #section_5 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -388,15 +400,14 @@ div.gallary a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
-#section_5 .container:hover .image {
+#section_5 .gall:hover .image {
     opacity: 0.3;
 }
 
-#section_5 .container:hover .middle {
+#section_5 .gall:hover .middle {
     opacity: 1;
 }
 
@@ -405,6 +416,16 @@ div.gallary a:hover {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+
+.col-3 .post {
+    width: 35%;
+}
+
+.col-3 .post img {
+    width: 100%;
+    padding: 0.3rem;
 }
 
 
@@ -776,7 +797,7 @@ div.gallary a:hover {
     color: #4e4d4d;
 }
 
-#section_82 .container {
+#section_82 .contain {
     width: 28px;
     height: 28px;
     display: flex;
@@ -787,13 +808,13 @@ div.gallary a:hover {
     font-size: 16px;
 }
 
-#section_82 .container i {
+#section_82 .contain i {
     color: #4e4d4d;
     font-size: 2.5rem;
     text-align: center;
 }
 
-#section_82 .container span .num {
+#section_82 .contain span .num {
     color: #141414;
     display: grid;
     place-items: center;
@@ -801,7 +822,7 @@ div.gallary a:hover {
     font-size: 3rem;
 }
 
-#section_82 .container span .text {
+#section_82 .contain span .text {
     color: #141414;
     font-size: 1rem;
     text-align: center;
