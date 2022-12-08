@@ -1,5 +1,5 @@
 header #navbar {
-  position: fixed; /* Make it stick/fixed */
+ /* position: fixed; /* Make it stick/fixed */
   top: 0; /* Stay on top */
   z-index: 1;
   width: 100%; /* Full width */
@@ -579,6 +579,182 @@ div.gallary a:hover {
     padding: 20px;
     overflow: hidden;
 }
+
+#video_section{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/video_bg.jpg); */
+
+        background-image: url(../images/video_bg.jpg);
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        
+
+    }
+
+ #video_section .overLay{
+    background: rgb(43, 41, 41);
+    opacity: 0.75;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0.5;
+
+} 
+    #video_section .contain{
+        display: flex;
+        text-align: center;
+
+    }
+
+
+
+
+#video_section .caption{
+/* position: fixed; */
+    text-align: center;
+    width: 50%;
+margin-top: 200px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+#video_section .caption p{
+    color: #9b9b9b;
+}
+
+#video_section .caption h4{
+    font-size: 2.5rem;
+}
+
+
+
+
+#video_section .button_watch .btn {
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+margin-top: 5px;
+margin-left: 50%;
+}
+
+#video_section .button_watch a:hover {
+    background-color: rgba(52, 50, 50, 0.1);
+    border-color: #fff;
+    color: white;
+}
+
+#video_section .button_watch .text{
+    font-size: 0.9rem;
+}
+
+#video_section .btn {
+
+  margin-top: 50px;
+    font-size: 80px;
+    transition: 0.5s;
+}
+/* #video_section .play a:hover {
+    font-size: 90px;
+} */
+.btn .active .play{
+box-shadow:0 0 100% #242424;
+}
+#video_section .clip{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    display: none;
+
+}
+#video_section .clip .active{
+    transition-delay: 0.5s;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+#video_section .clip .close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+#video_section .clip video{
+    max-width:900px ;
+    
+}
+  
+
+#video_section .btn{
+    color: #fff;
+    margin-left: 50%;
+    margin-top: 90px;
+    position: relative;
+  
+
+}
+
+/* #video_section .video{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:10000;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.video .active{
+    visibility: visible;
+    opacity: 1;
+} 
+
+#video_section .video video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+} 
+/* #video_section .close{
+    position:absolute;
+    top:30px;
+    right:30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+} */
+
+#video_section .mfp-hide {
+    display: none!important;
+}
+
+#video_section .button {
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+    display: inline-block;
+
+} */
+
+
+
 
 
 .slide_2 {
